@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgba(255, 255, 255, 0);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.boxdesign{
+  border: 1px solid transparent;
+  border-radius: 9px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.boxdesign h2{
+  color: #fff;
+  background-color: #e90c0c;
+  text-align: center;
+  transition: color 0.3s, background-color 0.3s, border-radius 0.3s;
+  display: inline-block;
+  padding: 5px 100px;
+  border: 1px solid transparent; /* Add transparent border */
+  border-radius: 10px; /* Add smooth color transition on hover */
+}
+
+.boxdesign h2:hover {
+  color: #141414; /* Color change on hover */
+  border-color: #f8f8f8; 
+  background-color: #ffffff;
+  
+}
+.boxdesign h2:active {
+  border-color: #f7f7f4; /* Border color change on click */
+  
+}

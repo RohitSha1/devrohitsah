@@ -1,0 +1,35 @@
+/* Example CSS for the Slider component */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slider-item {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  
+  .slider-item.active {
+    left: 0;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .slider-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .slider-item h3,
+  .slider-item p {
+    margin: 10px;
+    color: #333;
+  }
+  
